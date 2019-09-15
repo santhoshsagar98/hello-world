@@ -1,0 +1,22 @@
+# BENCHMARK FILE
+# 6 inputs
+# 1 output
+# 7 gates ( 4 ANDs, 2 NOTs, 1 OR )
+
+INPUT(A)
+INPUT(B)
+INPUT(C)
+INPUT(D)
+INPUT(X)
+INPUT(Y)
+
+OUTPUT(O)
+
+
+G = AND(X,Y,A)
+H = AND(X,F,B)
+I = AND(E,Y,C)
+J = AND(E,F,D)
+E = NOT(X)
+F = NOT(Y)
+O = OR(G,H,I,J)
